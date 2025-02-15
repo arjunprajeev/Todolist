@@ -9,7 +9,7 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.static('public'));//static files inside public folder
 
 //mongoose.connect("mongodb://localhost:27017/todo");
-mongoose.connect("mongodb+srv://arjunprajeev10:<db_password>@cluster0.mjxca.mongodb.net/todo?retryWrites=true&w=majority&appName=Cluster0");
+mongoose.connect("mongodb+srv://arjunprajeev10:wvkqIaC1v76MymDy@cluster0.mjxca.mongodb.net/todo?retryWrites=true&w=majority&appName=Cluster0");
 const trySchema= new mongoose.Schema({
     name:String
 }); 
