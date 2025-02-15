@@ -8,7 +8,8 @@ app.use(express.urlencoded({extended: true}));
 // in an Express application is used to parse URL-encoded data (form data) from the incoming HTTP request body. It is typically used when you submit forms with the application/x-www-form-urlencoded content type.
 app.use(express.static('public'));//static files inside public folder
 
-mongoose.connect("mongodb://localhost:27017/todo");
+//mongoose.connect("mongodb://localhost:27017/todo");
+mongoose.connect("mongodb+srv://arjunprajeev10:<db_password>@cluster0.mjxca.mongodb.net/todo?retryWrites=true&w=majority&appName=Cluster0");
 const trySchema= new mongoose.Schema({
     name:String
 }); 
